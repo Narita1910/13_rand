@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 			max = a[1];
 			num = a[2];
 			for (i = 0; i < num; i++) {
-				x = (48271*x)&(2147483647-1);
+				x = (48271*x)mod(2^31-1);
 				x= x / ((0x7fffffff + max - 1) / max) + 1;
 				
 				printf("%d\n", x);
