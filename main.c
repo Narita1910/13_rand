@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 				x = (48271*x)& (2147483647-1);
 				//printf("%d\n", x);
 				//x= x / ((0x7fffffff + max - 1) / max) + 1;
-				y = x / ((0x7fffffff + max-1) / max) + 1;
+				y = x / ((0x7fffffff + max-1) / max-1) + 1;
 				printf("%d\n", y);
 			}
 		}
